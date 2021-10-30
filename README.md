@@ -51,7 +51,7 @@ The sender can specify the following attributes:
 After the tokens have been sent to the bridge, it is possible to withdraw them on a chain with the specified Chain ID as follows:
 ### Driven by determinism
 
-Based on above parameters, a deterministic BTXID (Bridge Transaction ID) can be calculated which also incorporates a nonce which is incremented related to the transactor, the source Chain ID and the target Chain ID. This ensures that withdrawal transactions can not be tampered with, only transactions whose parameters map to the very same BTXID can be withdrawn on the target chain.
+Based on above parameters, [a deterministic BTXID (Bridge Transaction ID) can be calculated](./BridgeQANX.sol#L65) which also incorporates a nonce which is incremented related to the transactor, the source Chain ID and the target Chain ID. This ensures that withdrawal transactions can not be tampered with, only transactions whose parameters map to the very same BTXID can be withdrawn on the target chain.
 
 
 
